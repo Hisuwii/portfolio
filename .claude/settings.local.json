@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --eslint --src-dir no --import-alias \"@/*\" --yes)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --eslint --import-alias \"@/*\" --yes)",
+      "Read(//c/Users/quila/Documents/**)",
+      "Bash(npx create-next-app@latest web-port-temp --typescript --tailwind --app --eslint --import-alias \"@/*\" --yes)",
+      "Bash(cp -r /c/Users/quila/Documents/web-port-temp/. /c/Users/quila/Documents/web-port/)",
+      "Bash(rm -rf /c/Users/quila/Documents/web-port-temp)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest init --defaults)"
+    ]
+  }
+}
