@@ -77,7 +77,7 @@ export default function ChatWindow({ sessionId, onClose }: ChatWindowProps) {
             <div className="w-9 h-9 rounded-full overflow-hidden border border-border">
               <Image src="/images/pfp.png" alt="Ivan Jade Quilang" width={36} height={36} className="w-full h-full object-cover" />
             </div>
-            <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full border-2 border-white bg-green-500" />
+            <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full border-2 border-card bg-green-500" />
           </div>
           <div>
             <p className="text-sm font-semibold leading-tight">Ivan Jade Quilang</p>
@@ -156,7 +156,7 @@ export default function ChatWindow({ sessionId, onClose }: ChatWindowProps) {
           <button
             onClick={() => handleSend()}
             disabled={!input.trim() || sending}
-            className="w-8 h-8 rounded-lg flex items-center justify-center bg-foreground text-white transition-all disabled:opacity-30 hover:scale-105 shrink-0"
+            className="w-8 h-8 rounded-lg flex items-center justify-center bg-foreground text-background transition-all disabled:opacity-30 hover:scale-105 shrink-0"
             aria-label="Send message"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

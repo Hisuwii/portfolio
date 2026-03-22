@@ -14,7 +14,7 @@ export default function MessageBubble({ message }: { message: Message }) {
   if (isVisitor) {
     return (
       <div className="flex flex-col items-end gap-1 px-4 py-1">
-        <div className="max-w-[75%] px-4 py-2.5 rounded-2xl rounded-br-sm text-sm text-white leading-relaxed bg-foreground">
+        <div className="max-w-[75%] px-4 py-2.5 rounded-2xl rounded-br-sm text-sm text-background leading-relaxed bg-foreground">
           {message.content}
         </div>
         <span className="text-xs text-muted-foreground">{time}</span>
