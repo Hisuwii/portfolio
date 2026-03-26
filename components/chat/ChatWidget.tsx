@@ -15,7 +15,7 @@ function getOrCreateSessionId(): string {
 }
 
 export default function ChatWidget() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
   const [sessionId, setSessionId] = useState<string | null>(null)
   const [hasUnread, setHasUnread] = useState(false)
 
